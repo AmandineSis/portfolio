@@ -1,6 +1,6 @@
 <template>
-  <div class="Home">
-    Home
+  <div class="Contact">
+    Contact
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -10,7 +10,7 @@
 //mport HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'ContactView',
   components: {
     //HelloWorld
   }
