@@ -31,8 +31,7 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "profile" */ '../views/ContactView.vue')
-  },
-
+  }
 ]
 
 const router = createRouter({
