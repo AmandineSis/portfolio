@@ -1,6 +1,6 @@
 <template>
   <MainHeader/>
-  <router-view :key="$route.path"/>
+  <router-view class="router-view" :key="$route.path"/>
   <MainFooter/>
 </template>
 
@@ -31,5 +31,9 @@ export default ({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #a39da9;
+
+}
+.router-view {
+  padding: 0 20px 0 20px;
 }
 </style>
