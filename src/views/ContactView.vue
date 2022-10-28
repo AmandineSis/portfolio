@@ -1,28 +1,29 @@
 <template>
-  <div id="contact" class="Contact">
-    Contact
+  <section id="contact" class="Contact">
+    <Subtitle :subtitle="subtitle"/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  </div>
+  </section>
 </template>
 
 <script>
 // @ is an alias to /src
-//mport HelloWorld from '@/components/HelloWorld.vue'
+import Subtitle from "@/components/SubTitles.vue"
 
 export default {
-  name: 'ContactView',
+  name: 'ProjectView',
   components: {
-    //HelloWorld
-  }
+    Subtitle
+  },
+  data() {
+    return {
+      subtitle: 'Contact'
+    }
+  },
 }
 </script>
 
 <style scoped lang="scss">
 #contact {
-  height: 80vh;
-  width: 100vw;
-  position : relative;
-  top: 10vh;
   border : solid blue 1px;
 }
 </style>

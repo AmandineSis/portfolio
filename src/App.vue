@@ -36,4 +36,11 @@ export default ({
 .router-view {
   padding: 0 20px 0 20px;
 }
+
+section {
+  height: 80vh;
+  width: 100vw;
+  position : relative;
+  top: 10vh;
+}
 </style>

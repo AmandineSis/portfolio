@@ -25,13 +25,9 @@ export default {
 
 <style scoped lang="scss">
 #home {
-  height: 80vh;
-  width: 100vw;
-  position: relative;
-  top: 10vh;
   display: flex;
   flex-direction: row;
-  //border : solid blue 1px;
+  border : solid blue 1px;
 }
 .hero {
   height: 100%;
@@ -55,4 +51,5 @@ export default {
   justify-content: start;
   //border : solid green 1px;
 }
+
 </style>
