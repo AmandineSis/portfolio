@@ -1,9 +1,14 @@
 <template>
   <footer class="footer">
     <div class="footer__links">
-      <a to="/"><fa-icon class="social-link" icon="fa-brands fa-linkedin" />LinkedIn</a>
       <a to="/"
-        ><fa-icon class="social-link" icon="fa-brands fa-square-github" />GitHub</a
+        ><font-awesome-icon class="social-link" icon="fa-brands fa-linkedin" />LinkedIn</a
+      >
+      <a to="/"
+        ><font-awesome-icon
+          class="social-link"
+          icon="fa-brands fa-square-github"
+        />GitHub</a
       >
     </div>
     <div class="footer__copyright">

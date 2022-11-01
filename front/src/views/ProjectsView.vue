@@ -4,6 +4,8 @@
     <div class="proj-container" v-if="initialVue">
       <div class="card">
         <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </div>
     <div class="proj-container proj-popup" v-else>
@@ -39,7 +41,7 @@ export default {
   width: 100%;
   height: 100%;
   margin-right: 30px;
-  background-color: pink;
+  background-color: white;
 }
 
 .card {

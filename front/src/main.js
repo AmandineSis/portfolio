@@ -24,7 +24,7 @@ app.use(Vue3Mq, {
 })
 .use(store)
 .use(router)
-.component('fa-icon', FontAwesomeIcon)
+.component('font-awesome-icon', FontAwesomeIcon)
 .mount('#app')
 
 //AJOUT DES ICONES A LA LIBRAIRIE - SOLID ICON    
