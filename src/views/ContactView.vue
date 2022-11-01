@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="Contact">
+  <section id="Contact" class="Contact">
     <Subtitle :subtitle="subtitle"/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </section>

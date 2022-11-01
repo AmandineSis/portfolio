@@ -1,12 +1,16 @@
 <template>
   <section id="home">
     <div class="hero">
-      <p class="hero__title--small">👋 Hi there! My name is </p>
-      <h1 class="hero__title">Amandine Sismondi, <br> <span class="dev">Web Developer</span> <!--<span class="dejs">   #Javascript</span><span class="dev vue"> #VueJs</span><span class="dev express"> #API_REST</span>--></h1> 
+      <p class="hero__title--small">👋 Hi there! My name is</p>
+      <h1 class="hero__title">
+        Amandine Sismondi, <br />
+        <span class="dev">Web Developer</span>
+        <!--<span class="dejs">   #Javascript</span><span class="dev vue"> #VueJs</span><span class="dev express"> #API_REST</span>-->
+      </h1>
       <p class="hero__about">who loves creating apps and "Did you know" facts !</p>
     </div>
     <div class="animation">
-    <img src="@/assets/images/hero_img.jpg" alt="illustration 3d screen development"/>
+      <img src="@/assets/images/hero_img.jpg" alt="illustration 3d screen development" />
     </div>
   </section>
 </template>
@@ -16,18 +20,18 @@
 //mport HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     //HelloWorld
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">
 #home {
   display: flex;
   flex-direction: row;
-  border : solid blue 1px;
+  border: solid blue 1px;
 }
 .hero {
   height: 100%;
@@ -36,8 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: left;
-  //border : solid red 1px;
-  &__title{
+  &__title {
     font-size: 50px;
     color: #373638;
   }
@@ -48,8 +51,6 @@ export default {
   padding: 148px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  //border : solid green 1px;
+  justify-content: flex-start;
 }
-
 </style>

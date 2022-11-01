@@ -1,18 +1,18 @@
 <template>
-  <MainHeader/>
-  <router-view class="router-view" :key="$route.path"/>
-  <MainFooter/>
+  <MainHeader />
+  <router-view class="router-view" :key="$route.path" />
+  <MainFooter />
 </template>
 
 <script>
-import MainHeader from '@/components/MainHeader.vue'
-import MainFooter from '@/components/MainFooter.vue'
-export default ({
+import MainHeader from "@/components/MainHeader.vue";
+import MainFooter from "@/components/MainFooter.vue";
+export default {
   components: {
     MainHeader,
-    MainFooter
-  }
-})
+    MainFooter,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -31,16 +31,26 @@ export default ({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #a39da9;
-
 }
 .router-view {
-  padding: 0 20px 0 20px;
+  padding: 0;
 }
 
 section {
   height: 80vh;
   width: 100vw;
-  position : relative;
+  position: relative;
   top: 10vh;
+  border: solid blue 1px;
+}
+
+#Projects,
+#Profile,
+#Skills,
+#Contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 </style>

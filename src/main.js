@@ -7,7 +7,7 @@ import './assets/styles/reset.scss'
 /************************************************************** */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const app = createApp(App)
 //Décommenter pour rendre Vuex store invisible
@@ -24,7 +24,7 @@ app.use(Vue3Mq, {
 })
 .use(store)
 .use(router)
-.component('font-awesome-icon', FontAwesomeIcon)
+.component('fa-icon', FontAwesomeIcon)
 .mount('#app')
 
 //AJOUT DES ICONES A LA LIBRAIRIE - SOLID ICON    

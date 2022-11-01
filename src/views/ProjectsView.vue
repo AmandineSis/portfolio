@@ -1,29 +1,36 @@
 <template>
-  <section id="projects" class="Projects">
-    <Subtitle :subtitle="subtitle"/>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <section id="Projects" class="Projects">
+    <Subtitle :subtitle="subtitle" />
+    <div class="proj-container" v-if="initialVue">
+      <div class="card"></div>
+    </div>
+    <div class="proj-container proj-popup" v-else>popup</div>
   </section>
 </template>
 
 <script>
 // @ is an alias to /src
-import Subtitle from "@/components/SubTitles.vue"
+import Subtitle from "@/components/SubTitles.vue";
 
 export default {
-  name: 'ProjectView',
+  name: "ProjectView",
   components: {
-    Subtitle
+    Subtitle,
   },
   data() {
     return {
-      subtitle: 'Projects'
-    }
+      subtitle: "Projects",
+      initialVue: true,
+    };
   },
-}
+};
 </script>
 
 <style scoped lang="scss">
-#projects {
-  border : solid blue 1px;
+.proj-container {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
 }
 </style>
