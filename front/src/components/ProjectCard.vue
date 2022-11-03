@@ -1,35 +1,26 @@
 <template>
   <div class="project__card">
-    <h3 class="project__title">Groupomania</h3>
-    <img
-      class="project__image"
-      src="@/assets/images/projects/project_preview_groupomania.png"
-      alt="Aperçu site groupomania"
-    />
+    <h3 class="project__title">{{ projItems.title }}</h3>
     <p class="project__description">
-      Création d'un réseau social d'entreprise permettant une meilleure cohésion d'équipe
+      {{ projItems.subtitle }}
     </p>
+    <img class="project__image" :src="projItems.screenshot" :alt="projItems.altTxt" />
+    <button class="project__btn" @click="$emit('openCard', projItems._id)">More details...</button>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-//store
-import { mapActions } from "vuex";
 
 export default {
   name: "ProjectCard",
-  beforeMount() {
-    this.getAllProjects()
-      .then(() => {
-        console.log("getAllProjects dispatch done !");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  props: {
+    projItems: Object,
   },
   methods: {
-    ...mapActions(["getAllProjects"]),
+    submit(projId) {
+      this.$emit("openCard", projId);
+    },
   },
 };
 </script>

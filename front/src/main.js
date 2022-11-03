@@ -7,6 +7,7 @@ import './assets/styles/reset.scss'
 /************************************************************** */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const app = createApp(App)
@@ -30,7 +31,8 @@ app.use(Vue3Mq, {
 //AJOUT DES ICONES A LA LIBRAIRIE - SOLID ICON    
 library.add(
     faGithub,
-    faLinkedin
+    faLinkedin,
+    faXmark
   );
 
    
