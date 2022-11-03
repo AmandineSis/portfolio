@@ -14,7 +14,7 @@
     </div>
     <!-- display selected project -->
     <div class="proj-container proj-popup" v-else>
-      <ProjectPopup :selection="selection" />
+      <ProjectPopup :selection="selection" @close-card="closeSelection" />
     </div>
   </section>
 </template>
@@ -55,6 +55,9 @@ export default {
       this.getSelectedProject(id).then(() => {
         console.log("getSelectedProject dispatch done !");
       });
+    },
+    closeSelection() {
+      this.initialVue = true;
     },
   },
 };

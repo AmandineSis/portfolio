@@ -8,7 +8,11 @@
       />
     </div>
     <div class="proj-selection__right">
-      <font-awesome-icon class="proj-selection__close" icon="xmark" @click="closePopup" />
+      <font-awesome-icon
+        class="proj-selection__close"
+        icon="xmark"
+        @click="$emit('closeCard')"
+      />
       <div class="proj-selection__description">
         <h2 class="proj-selection__title">{{ selection.title }}</h2>
         <h3 class="proj-selection__subtitle">{{ selection.subtitle }}</h3>
@@ -43,6 +47,11 @@ export default {
   name: "ProjectView",
   props: {
     selection: Object,
+  },
+  methods: {
+    close() {
+      this.$emit("closeCard");
+    },
   },
 };
 </script>
