@@ -77,10 +77,13 @@ export default {
     justify-content: space-evenly;
   }
   &__close {
+    position: relative;
+    top: 0;
     font-size: 30px;
   }
   &__screenshot {
     width: 100%;
+    min-width: 350px;
   }
   &__title {
     color: #373638;
