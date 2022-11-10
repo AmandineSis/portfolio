@@ -8,18 +8,20 @@
       />
     </div>
     <div class="proj-selection__right">
-      <font-awesome-icon
-        class="proj-selection__close"
-        icon="xmark"
-        @click="$emit('closeCard')"
-      />
+      <div class="proj-selection__close">
+        <font-awesome-icon
+          class="proj-selection__close--icon"
+          icon="xmark"
+          @click="$emit('closeCard')"
+        />
+      </div>
       <div class="proj-selection__description">
         <h2 class="proj-selection__title">{{ selection.title }}</h2>
         <h3 class="proj-selection__subtitle">{{ selection.subtitle }}</h3>
         <div class="divider"><!--line divider--></div>
 
         <ul class="proj-selection__list">
-          <li class="proj-selection__item r">{{ selection.description[0] }}</li>
+          <li class="proj-selection__item">{{ selection.description[0] }}</li>
           <li class="proj-selection__item">{{ selection.description[1] }}</li>
           <li class="proj-selection__item">{{ selection.description[2] }}</li>
           <li class="proj-selection__item">{{ selection.description[3] }}</li>
@@ -68,21 +70,27 @@ export default {
 
   &__left {
     width: 50%;
+    object-fit: contain;
   }
   &__right {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-content: space-around;
   }
   &__close {
-    position: relative;
-    top: 0;
-    font-size: 30px;
+    height: 50px;
+    text-align: right;
+
+    &--icon {
+      font-size: 30px;
+      margin: 20px;
+    }
   }
   &__screenshot {
-    width: 100%;
+    object-fit: contain;
+    width: 80%;
     min-width: 350px;
   }
   &__title {
