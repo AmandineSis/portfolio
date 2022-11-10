@@ -34,9 +34,12 @@
           <span class="vue">{{ selection.languages[1] }}</span>
           <span class="express"> {{ selection.languages[2] }}</span>
         </h4>
-        <a href="${selection.codesource}" class="proj-selection__link"
-          ><i class="fa-brands fa-github"></i> Code source</a
-        >
+        <div class="proj-selection__container">
+          <a href="${selection.codesource}" class="proj-selection__link"
+            ><!--<i class="fa-brands fa-github"></i>-->
+            Code source</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -115,9 +118,12 @@ export default {
     text-align: left;
     color: #373638;
   }
-
+  &__container {
+    width: 100%;
+    text-align: left;
+  }
   &__link {
-    text-align: start;
+    margin-top: 50px;
     color: #373638;
     text-decoration: underline;
   }
