@@ -25,7 +25,13 @@
           ambitious projects with positive people.
         </p>
       </div>
-      <div class="about_img"></div>
+      <div class="profile">
+        <img
+          class="profile__img"
+          src="@/assets/images/dev_woman.jpg"
+          alt="illustration 3d screen development"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -49,21 +55,38 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  background-color: blue;
-  width: 100%;
-  height: 100%;
-  margin-right: 30px;
-}
-/*.about {
   width: 100%;
   height: 100%;
   margin-right: 30px;
   display: flex;
+  justify-content: center;
+}
+.about {
+  width: 50%;
+  height: 100%;
+  margin-right: 30px;
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px 20px 20px;
   text-align: justify;
   color: #373638;
   line-height: 1.2;
-}*/
+  &__content {
+    margin: 10px;
+    display: flex;
+  }
+}
+
+.profile {
+  width: 30%;
+  margin: 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    width: 100%;
+  }
+}
 </style>

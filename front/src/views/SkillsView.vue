@@ -30,7 +30,7 @@
       </div>
       <div class="skills__container--cv">
         <p class="skills__divider">--- OR ---</p>
-        <button class="skills__btn" type="upload">Download CV</button>
+        <a class="skills__btn" href="./assets/static/cv.pdf">View CV</a>
       </div>
     </div>
   </section>
@@ -48,7 +48,6 @@ export default {
   data() {
     return {
       subtitle: "Skills",
-      pdfLink: "@/assets/images/craftCode-logo.png",
     };
   },
 };
@@ -78,6 +77,7 @@ export default {
     grid-gap: 5px;
     width: 100%;
     height: 50%;
+    font-weight: bold;
     &--cv {
       width: 200px;
       height: 50px;

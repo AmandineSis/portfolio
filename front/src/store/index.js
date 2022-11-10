@@ -65,9 +65,46 @@ export default createStore({
           "Valider des données issues de sources externes",
           "Créer un plan de test pour une application",
           "Gérer des événements JavaScript",
-        ],
-      }],
-    selection: []
+        ]
+      },
+      {
+        _id: 4,
+        title: "Oh My Food !",
+        status: "inactive",
+        subtitle: "Site 100% mobile de gastronomie",
+        frame: require('@/assets/images/projects/ohmyfood.jpg'),
+        frameAltTxt: "aperçu application mobile ohmyfood",
+        screenshot: require('@/assets/images/projects/ohmyfood.jpg'),
+        altTxt: "aperçu du site OhMyFood",
+        specifications: "",
+        codesource: "https://github.com/AmandineSis/Oh_my_food",
+        languages: ["#HTML", "#Sass", "#Animation_CSS"],
+        description: [
+          "Mettre en œuvre des effets CSS graphiques avancés",
+          "Assurer la cohérence graphique d'un site web",
+          "Mettre en place une structure de navigation pour un site web",
+          "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+        ]
+      },
+      {
+        _id: 5,
+        title: "Réservia",
+        status: "inactive",
+        subtitle: "Intégration d'un site d'hébergement ",
+        frame: require('@/assets/images/projects/reservia.jpg'),
+        frameAltTxt: "aperçu application mobile ohmyfood",
+        screenshot: require('@/assets/images/projects/reservia.jpg'),
+        altTxt: "aperçu du site Réservia",
+        specifications: "",
+        codesource: "https://github.com/AmandineSis/reservia",
+        languages: ["#HTML", "#Sass", "#Animation_CSS"],
+        description: [
+          "Intégrer du contenu conformément à une maquette",
+          "Implémenter une interface responsive",
+        ]
+      },
+    ],
+    selection: [],
     },
   getters: {
     GetAllProjects(state){

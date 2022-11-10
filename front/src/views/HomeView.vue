@@ -9,8 +9,12 @@
       </h1>
       <p class="hero__about">who loves creating apps and "Did you know" facts !</p>
     </div>
-    <div class="animation">
-      <img src="@/assets/images/hero_img.jpg" alt="illustration 3d screen development" />
+    <div class="hero__image">
+      <img
+        class="hero__image__file"
+        src="@/assets/images/dev_woman.jpg"
+        alt="illustration 3d screen development"
+      />
     </div>
   </section>
 </template>
@@ -31,12 +35,12 @@ export default {
 #home {
   display: flex;
   flex-direction: row;
-  border: solid blue 1px;
+  align-items: center;
 }
 .hero {
   height: 100%;
   width: 60%;
-  padding: 170px 0 170px 90px;
+  padding: 170px 0 170px 100px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -44,13 +48,15 @@ export default {
     font-size: 50px;
     color: #373638;
   }
+  &__image {
+    width: 40%;
+    &__file {
+      width: 100%;
+      padding-right: 100px;
+    }
+    //padding: 148px 20px;
+  }
 }
 .animation {
-  height: 100%;
-  width: 30%;
-  padding: 148px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 </style>
