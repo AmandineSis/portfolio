@@ -2,13 +2,15 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import VueSplide from '@splidejs/vue-splide';
 import { Vue3Mq } from "vue3-mq"
 import './assets/styles/reset.scss'
+import '@splidejs/vue-splide/css';
 /************************************************************** */
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import * as vueFontawesome from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faXmark, faMugHot } from '@fortawesome/free-solid-svg-icons'
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const app = createApp(App)
 //Décommenter pour rendre Vuex store invisible
@@ -25,14 +27,16 @@ app.use(Vue3Mq, {
 })
 .use(store)
 .use(router)
-.component('font-awesome-icon', FontAwesomeIcon)
+.use(VueSplide)
+.component('font-awesome-icon', vueFontawesome.FontAwesomeIcon)
 .mount('#app')
 
 //AJOUT DES ICONES A LA LIBRAIRIE - SOLID ICON    
 library.add(
-    faGithub,
+    faSquareGithub,
     faLinkedin,
-    faXmark
+    faXmark,
+    faMugHot
   );
 
    

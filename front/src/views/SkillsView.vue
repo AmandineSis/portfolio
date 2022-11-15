@@ -54,8 +54,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#skills {
-  border: solid blue 1px;
+#Skills {
   display: flex;
   flex-direction: row;
 }
@@ -123,7 +122,7 @@ export default {
     touch-action: manipulation;
     &:hover {
       box-shadow: #d83c65 0 0 0 3px, transparent 0 0 0 0;
-      color: #a39da9;
+      color: #373638;
       background-color: #fff;
     }
   }

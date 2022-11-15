@@ -1,15 +1,13 @@
 <template>
   <footer class="footer">
     <div class="footer__links">
-      <a to="/"
-        ><font-awesome-icon class="social-link" icon="fa-brands fa-linkedin" />LinkedIn</a
-      >
-      <a to="/"
-        ><font-awesome-icon
-          class="social-link"
-          icon="fa-brands fa-square-github"
-        />GitHub</a
-      >
+      <a to="/"><font-awesome-icon class="social-link" icon="fa-brands fa-linkedin" /></a>
+      <a class="social-link" href="https://www.buymeacoffee.com/amsismondi"
+        ><font-awesome-icon icon="fa-brands fa-square-github"
+      /></a>
+      <a class="social-link" href="https://www.buymeacoffee.com/amsismondi"
+        ><font-awesome-icon icon="fa-solid fa-mug-hot"
+      /></a>
     </div>
     <div class="footer__copyright">
       <p>
@@ -57,5 +55,6 @@ export default {
 .social-link {
   font-size: 30px;
   margin: 5px;
+  color: #373638;
 }
 </style>

@@ -113,6 +113,9 @@ export default {
     padding: 10px 0;
     color: #373638;
   }
+  &__item {
+    margin: 5px 0;
+  }
   &__languages {
     padding: 10px 0;
     text-align: left;
@@ -121,6 +124,7 @@ export default {
   &__container {
     width: 100%;
     text-align: left;
+    margin-top: 10px;
   }
   &__link {
     margin-top: 50px;

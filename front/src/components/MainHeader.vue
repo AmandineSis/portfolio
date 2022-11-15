@@ -1,25 +1,24 @@
 <template>
-    <header class="main-header" v-once>
-        <img class="logo" src="@/assets/images/craftCode-logo.png" alt="logo craft code">
-        <nav class="top-nav">
-            <router-link class="top-nav__item" to="/">Home</router-link>
-            <router-link class="top-nav__item" to="/projects">Projects</router-link>
-            <router-link class="top-nav__item" to="/about">About</router-link>
-            <router-link class="top-nav__item" to="/skills">Skills</router-link>
-            <router-link class="top-nav__item" to="/contact">Contact</router-link>
-      </nav>
-    </header>
+  <header class="main-header" v-once>
+    <img class="logo" src="@/assets/images/craftCode-logo.png" alt="logo craft code" />
+    <nav class="top-nav">
+      <router-link class="top-nav__item" to="/">Home</router-link>
+      <router-link class="top-nav__item" to="/projects">Projects</router-link>
+      <router-link class="top-nav__item" to="/about">About</router-link>
+      <router-link class="top-nav__item" to="/skills">Skills</router-link>
+      <router-link class="top-nav__item" to="/contact">Contact</router-link>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-    name: 'MainHeader'
-   
-}
+  name: "MainHeader",
+};
 </script>
 
 <style scoped lang="scss">
- header {
+header {
   height: 10vh;
   width: 100vw;
   display: flex;
@@ -42,13 +41,15 @@ export default {
   margin: 0;
   display: flex;
   justify-content: space-between;
-    &__item {
-      height: 10vh;
-      padding: 30px;
-      color: #a39da9;
-      &:hover {
-        border-bottom: 2px #a39da9 solid;
-      }
+  &__item {
+    height: 10vh;
+    padding: 30px;
+    color: #a39da9;
+    &:hover {
+      border-bottom: 2px #a39da9 solid;
+      font-weight: bold;
+      color: #373638;
     }
+  }
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
-  <MainHeader />
-  <router-view class="router-view" :key="$route.path" />
-  <MainFooter />
+  <div class="app">
+    <MainHeader />
+    <router-view class="router-view" :key="$route.path" />
+    <MainFooter />
+  </div>
 </template>
 
 <script>
@@ -30,7 +32,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #a39da9;
+  color: #373638;
 }
 .router-view {
   padding: 0;
@@ -41,7 +43,6 @@ section {
   width: 100vw;
   position: relative;
   top: 10vh;
-  border: solid blue 1px;
 }
 
 #Projects,
